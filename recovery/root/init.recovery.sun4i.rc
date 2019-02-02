@@ -6,6 +6,9 @@ on init
     #insmod gdx tp driver
     insmod /goodix_touch.ko
 
+    #insmod sun4i ts driver
+    insmod /sun4i-ts.ko
+
     #insmod nand driver
     insmod /nand.ko
 
