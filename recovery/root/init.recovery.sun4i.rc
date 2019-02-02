@@ -1,7 +1,13 @@
 on init
 
-    #insmod tp driver
+    #insmod fp tp driver
     insmod /ft5x_ts.ko
+
+    #insmod gdx tp driver
+    insmod /goodix_touch.ko
+
+    #insmod nand driver
+    insmod /nand.ko
 
     mkdir /databk
 
