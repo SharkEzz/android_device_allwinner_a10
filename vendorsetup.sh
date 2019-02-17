@@ -1,5 +1,5 @@
 #
-# Copyright 2019 The Android Open Source Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_a10-eng
+add_lunch_combo full_a10-userdebug
+add_lunch_combo cm_a10-userdebug
