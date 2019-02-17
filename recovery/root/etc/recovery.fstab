@@ -2,7 +2,6 @@
 /bootloader	vfat	/dev/block/nanda
 /env		emmc	/dev/block/nandb
 /boot		emmc	/dev/block/nandc	flags=backup=1
-/system_image	emmc	/dev/block/nandd
 /system		ext4	/dev/block/nandd	flags=backup=1;wipeingui
 /data		ext4	/dev/block/nande	flags=backup=1;wipeduringfactoryreset;wipeingui
 /misc		emmc	/dev/block/nandf
