@@ -16,7 +16,7 @@ ARCH_ARM_HAVE_NEON := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/allwinner/a10/kernel
-BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8 androidboot.hardware=sun4i
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --second_offset 0x00f00000
@@ -30,7 +30,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 268435456
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery tweaks
@@ -45,6 +45,7 @@ TARGET_RECOVERY_FSTAB := device/allwinner/a10/recovery/root/etc/recovery.fstab
 
 # TWRP
 #TW_THEME := landscape_mdpi
+RECOVERY_VARIANT := twrp
 DEVICE_RESOLUTION := 800x480
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TW_INCLUDE_NTFS_3G := true
